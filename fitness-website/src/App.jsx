@@ -1,4 +1,5 @@
 import About from './components/About';
+import Booking from './components/Booking';
 import CertificationsSection from './components/CertificationsSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -16,6 +17,7 @@ function App() {
        <CertificationsSection /> 
       <Services />
       <Testimonials />
+      <Booking />
       <Contact />
       <Footer />
     </div>

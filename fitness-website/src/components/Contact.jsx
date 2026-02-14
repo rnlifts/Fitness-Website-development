@@ -80,6 +80,24 @@ const Contact = () => {
       link: "#"
     }
   ];
+  const socialLinks = [
+  {
+    icon: "📷",
+    name: "Instagram",
+    link: "https://www.instagram.com/srinivasthandlay_fitness/"
+  },
+  {
+    icon: "💼",
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/srinivas-thandlay-a07975157"
+  },
+  {
+    icon: "💬",
+    name: "WhatsApp",
+    link: "https://wa.me/9779864152770"
+  }
+];
+
 
   return (
     <section id="contact" className="py-20 lg:py-32 bg-[#F9FAFB] relative overflow-hidden">
@@ -280,23 +298,25 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#1F2937] to-[#374151] text-white p-8 rounded-2xl">
-              <h4 className="text-xl font-bold mb-6">Follow My Journey</h4>
-              <div className="flex gap-4">
-                <a href="#" className="w-12 h-12 bg-[#3B82F6] hover:bg-[#2563EB] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
-                  <span className="text-xl">📘</span>
-                </a>
-                <a href="#" className="w-12 h-12 bg-[#EF4444] hover:bg-[#DC2626] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
-                  <span className="text-xl">📷</span>
-                </a>
-                <a href="#" className="w-12 h-12 bg-[#3B82F6] hover:bg-[#2563EB] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
-                  <span className="text-xl">🐦</span>
-                </a>
-                <a href="#" className="w-12 h-12 bg-[#0A66C2] hover:bg-[#084E96] rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg">
-                  <span className="text-xl">💼</span>
-                </a>
-              </div>
-            </div>
+          {/* Social Links */}
+<div className="bg-[#3B82F6] text-white p-8 rounded-2xl">
+  <h4 className="text-xl font-bold mb-6">Follow My Journey</h4>
+
+  <div className="flex gap-4">
+    {socialLinks.map((social, idx) => (
+      <a
+        key={idx}
+        href={social.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-300"
+      >
+        <span className="text-xl">{social.icon}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
           </div>
 
         </div>
