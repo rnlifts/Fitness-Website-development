@@ -21,7 +21,7 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EF4444] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#EF4444]"></span>
               </span>
-              <span className="text-sm font-semibold text-[#4B5563]">Certified Personal Trainer</span>
+              <span className="text-sm font-semibold text-[#4B5563]">Fitness Educator | Certified Personal Trainer</span>
             </div>
 
             {/* Heading */}
@@ -37,8 +37,8 @@ const Hero = () => {
 
             {/* Body Text */}
             <p className="text-lg text-[#4B5563] leading-relaxed max-w-xl">
-              Expert fitness training meets personalized education. Build unstoppable strength, 
-              unshakeable confidence, and lasting results with science-backed guidance.
+              Want to become a skilled fitness coach, deepen your knowledge as an enthusiast,
+               or start your personal transformation with expert support? I’m here to guide your journey step by step.
             </p>
 
             {/* CTA Buttons */}

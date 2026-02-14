@@ -5,8 +5,8 @@ const Footer = () => {
     services: [
       { name: 'Personal Training', href: '#services' },
       { name: 'Nutrition Coaching', href: '#services' },
-      { name: 'Online Coaching', href: '#services' },
-      { name: 'Group Classes', href: '#services' }
+      { name: 'Online Coaching', href: '#services' }
+      
     ],
     company: [
       { name: 'About', href: '#about' },
@@ -31,7 +31,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <a href="#home" className="text-2xl font-bold inline-block mb-4">
-              FIT<span className="text-gray-400">COACH</span>
+              SRINIVAS<span className="text-gray-400">FITNESS</span>
             </a>
             <p className="text-gray-400 leading-relaxed mb-6">
               Transforming lives through expert fitness training and education. 
@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} FitCoach. All rights reserved.
+              © {currentYear} SRINIVAS FITNESS. All rights reserved.
             </p>
             <div className="flex gap-6">
               {footerLinks.legal.map((link, index) => (

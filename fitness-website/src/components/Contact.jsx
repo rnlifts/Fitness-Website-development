@@ -21,10 +21,28 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: "📧", title: "Email", detail: "coach@fitnessedu.com", link: "mailto:coach@fitnessedu.com" },
-    { icon: "📱", title: "Phone", detail: "+1 (555) 123-4567", link: "tel:+15551234567" },
-    { icon: "📍", title: "Location", detail: "123 Fitness St, City, ST 12345", link: "#" }
+    { icon: "📧", title: "Email", detail: "srinivasthandlay.fitness@gmail.com", link: "mailto:srinivasthandlay.fitness@gmail.com" },
+    { icon: "📱", title: "Phone", detail: "+977 986-4152770", link: "tel:+9779864152770" },
+    { icon: "📍", title: "Location", detail: "Kathmandu, Nepal", link: "#" }
   ];
+  const socialLinks = [
+  {
+    icon: "📷",
+    name: "Instagram",
+    link: "https://instagram.com//srinivasthandlay_fitness/"
+  },
+  {
+    icon: "💼",
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/srinivas-thandlay-a07975157"
+  },
+  {
+    icon: "💬",
+    name: "WhatsApp",
+    link: "https://wa.me/9779864152770"
+  }
+];
+
 
   return (
     <section id="contact" className="py-20 lg:py-32 bg-white relative overflow-hidden">
@@ -136,16 +154,25 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="bg-[#3B82F6] text-white p-8 rounded-2xl">
-              <h4 className="text-xl font-bold mb-6">Follow My Journey</h4>
-              <div className="flex gap-4">
-                {["📘","📷","🐦","💼"].map((icon, idx) => (
-                  <a key={idx} href="#" className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-300">
-                    <span className="text-xl">{icon}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
+            {/* Social Links */}
+<div className="bg-[#3B82F6] text-white p-8 rounded-2xl">
+  <h4 className="text-xl font-bold mb-6">Follow My Journey</h4>
+
+  <div className="flex gap-4">
+    {socialLinks.map((social, idx) => (
+      <a
+        key={idx}
+        href={social.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-12 h-12 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all duration-300"
+      >
+        <span className="text-xl">{social.icon}</span>
+      </a>
+    ))}
+  </div>
+</div>
+
           </div>
 
         </div>

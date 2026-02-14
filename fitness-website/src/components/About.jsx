@@ -7,7 +7,7 @@ const About = () => {
     {
       icon: "🎓",
       title: "Certified Expert",
-      description: "Nationally certified personal trainer with advanced fitness education credentials"
+      description: "Internationally certified personal trainer with advanced fitness education credentials"
     },
     {
       icon: "🎯",
@@ -81,13 +81,13 @@ const About = () => {
                 Your Partner in Fitness Excellence
               </h3>
               <p className="text-lg text-[#4B5563] leading-relaxed mb-6">
-                With over a decade of experience in fitness training and education, I've dedicated 
-                my career to helping individuals like you transform their lives through sustainable, 
-                effective training methods.
+                As a fitness educator and certified personal trainer, I focus on helping individuals and aspiring
+                 coaches build real strength, knowledge, and confidence through structured training systems. 
               </p>
               <p className="text-lg text-[#4B5563] leading-relaxed">
-                My approach combines scientific principles with personalized attention, ensuring 
-                you not only reach your goals but maintain them for life.
+               My approach
+                  blends practical coaching experience with science-based methods so you can achieve meaningful results
+                   and sustain progress long term.
               </p>
             </div>
 

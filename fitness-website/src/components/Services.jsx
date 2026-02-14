@@ -19,23 +19,12 @@ const Services = () => {
       features: ["Video Calls", "App Access", "24/7 Support", "Weekly Check-ins"]
     },
     {
-      icon: "👥",
-      title: "Group Classes",
-      description: "High-energy group training sessions that build community and accountability",
-      features: ["HIIT Workouts", "Strength Training", "Mobility Work", "All Fitness Levels"]
-    },
-    {
       icon: "🎓",
       title: "Fitness Education",
       description: "Learn the science behind effective training through workshops and seminars",
       features: ["Exercise Science", "Injury Prevention", "Training Methods", "Certifications"]
     },
-    {
-      icon: "🏆",
-      title: "Competition Prep",
-      description: "Specialized training for athletes preparing for competitions and events",
-      features: ["Peak Training", "Periodization", "Mental Prep", "Recovery Plans"]
-    }
+    
   ];
 
   return (

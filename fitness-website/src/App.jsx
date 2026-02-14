@@ -1,4 +1,5 @@
 import About from './components/About';
+import CertificationsSection from './components/CertificationsSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+       <CertificationsSection /> 
       <Services />
       <Testimonials />
       <Contact />
