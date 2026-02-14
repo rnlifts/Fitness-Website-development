@@ -1,0 +1,19 @@
+// Environment Variables -- Never upload secrets to GitHub
+.env
+
+// Node Modules -- Don't upload installed packages
+node_modules/
+
+// Log Files -- Don't upload logs
+*.log
+npm-debug.log*
+
+// OS Files -- System files to ignore
+.DS_Store
+Thumbs.db
+
+// Editor Files -- Don't upload editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
